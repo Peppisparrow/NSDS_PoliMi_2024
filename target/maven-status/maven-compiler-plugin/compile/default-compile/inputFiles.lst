@@ -1,0 +1,9 @@
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/batch/wordcount/WordCountModified.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/batch/iterative/InvestmentSimulator.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/batch/bank/Bank.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/streaming/wordcount/StructuredStreamingWordCount.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/streaming/wordcount/StreamingWordCountWithState.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/streaming/enrichment/EventEnrichment.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/batch/wordcount/WordCount.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/streaming/wordcount/StreamingWordCount.java
+/Users/giuseppe/Desktop/nsds/NSDS_spark_tutorial-main/src/main/java/it/polimi/middleware/spark/streaming/event_time/WindowedCount.java
