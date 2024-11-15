@@ -1,0 +1,14 @@
+it/polimi/middleware/spark/streaming/event_time/WindowedCount.class
+it/polimi/middleware/spark/streaming/wordcount/StreamingWordCount.class
+it/polimi/middleware/spark/streaming/enrichment/EventEnrichment.class
+it/polimi/middleware/spark/batch/iterative/InvestmentSimulator.class
+it/polimi/middleware/spark/batch/friends/FriendsComputation.class
+it/polimi/middleware/spark/lab/bank/Bank.class
+it/polimi/middleware/spark/batch/wordcount/WordCount.class
+it/polimi/middleware/spark/lab/friends/FriendsComputation.class
+it/polimi/middleware/spark/lab/cities/Cities.class
+it/polimi/middleware/spark/streaming/wordcount/StructuredStreamingWordCount.class
+it/polimi/middleware/spark/batch/bank/Bank.class
+it/polimi/middleware/spark/batch/wordcount/WordCountModified.class
+it/polimi/middleware/spark/lab/enrichment/EventEnrichment.class
+it/polimi/middleware/spark/streaming/wordcount/StreamingWordCountWithState.class
