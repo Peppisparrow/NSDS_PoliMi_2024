@@ -15,7 +15,7 @@ public class BasicProducer {
 
     private static final int numMessages = 100000;
     private static final int waitBetweenMsgs = 500;
-    private static final boolean waitAck = false;
+    private static final boolean waitAck = true;
 
     private static final String serverAddr = "localhost:9092";
 
@@ -39,7 +39,7 @@ public class BasicProducer {
             final String key = "Key" + r.nextInt(1000);
             final String value = "Val" + i;
             System.out.println(
-                    "Topic: " + topic +
+                    "\tTopic: " + topic +
                     "\tKey: " + key +
                     "\tValue: " + value
             );

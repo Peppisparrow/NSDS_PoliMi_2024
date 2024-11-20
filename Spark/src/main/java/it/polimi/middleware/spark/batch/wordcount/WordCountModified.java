@@ -17,7 +17,6 @@ public class WordCountModified {
         final JavaRDD<String> lines = sc.textFile(filePath + "files/wordcount/in.txt");
 
         // Q1. For each character, compute the number of words starting with that character
-
         // TODO
 
         // Q2. For each character, compute the number of lines starting with that character

@@ -1,0 +1,8 @@
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/admin/TopicManager.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/atomic_forward/AtomicForwarder.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/atomic_forward/IdempotentProducer.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/basic/BasicConsumer.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/basic/BasicConsumerManual.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/basic/BasicProducer.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/transactional/TransactionalConsumer.java
+/home/zfirefist/Desktop/NSDS_PoliMi_2024/Kafka/src/main/java/it/polimi/middleware/kafka/transactional/TransactionalProducer.java

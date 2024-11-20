@@ -59,29 +59,26 @@ public class Bank {
                 .schema(mySchema)
                 .csv(filePath + "files/bank/withdrawals.csv");
 
-        // Q1. Total amount of withdrawals for each person
+        // Used in two different queries
         if (useCache) {
             withdrawals.cache();
         }
+
+        // Q1. Total amount of withdrawals for each person
 
         final Dataset<Row> sumWithdrawals = withdrawals
                 .groupBy("person")
                 .sum("amount")
                 .select("person", "sum(amount)");
+
+        // Used in two different queries
         if (useCache) {
             sumWithdrawals.cache();
         }
 
         sumWithdrawals.show();
 
-        // TODO
-
         // Q2. Person with the maximum total amount of withdrawals
-
-        // Q1. Total amount of withdrawals for each person
-        if (useCache) {
-            withdrawals.cache();
-        }
 
         final Dataset<Row> sumWithdrawals2 = withdrawals
                 .groupBy("account")
@@ -94,13 +91,15 @@ public class Bank {
         sumWithdrawals2.show();
 
         //rifai la stessa cosa stampandoli in ordine inverso
-        // TODO
+        sumWithdrawals2.orderBy(desc("sum(amount)")).show();
 
         // Q3 Accounts with negative balance
-
-        // TODO
+        final Dataset<Row> negativeBalance = deposits
+                .union(withdrawals)
+                .groupBy("account")
+                .sum("amount")
+                .filter("sum(amount) < 0");
 
         spark.close();
-
     }
 }

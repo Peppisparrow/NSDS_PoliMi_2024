@@ -70,22 +70,44 @@ public class Bank {
         // Q1. Total amount of withdrawals for each person
         System.out.println("Total amount of withdrawals for each person");
 
-        // TODO
+        final Dataset<Row> total_Amount_Withdrawals = withdrawals
+                .groupBy("person")
+                .agg(sum("amount").as("total_amount"))
+                .orderBy("person");
+
+        total_Amount_Withdrawals.show();
 
         // Q2. Person with the maximum total amount of withdrawals
         System.out.println("Person with the maximum total amount of withdrawals");
 
-        // TODO
+        final Row max_withdrawals = total_Amount_Withdrawals
+                .orderBy(desc("total_amount"))
+                .first();
+
+        System.out.println(max_withdrawals);
 
         // Q3 Accounts with negative balance
         System.out.println("Accounts with negative balance");
 
-        // TODO
+        final Dataset<Row> negative_Balance = deposits
+                .union(withdrawals)
+                .groupBy("account")
+                .agg(sum("amount").as("balance"))
+                .filter("balance < 0")
+                .orderBy("account");
+
+        negative_Balance.show();
 
         // Q4 Accounts in descending order of balance
         System.out.println("Accounts in descending order of balance");
 
-        // TODO
+        final Dataset<Row> accounts_Descending_Balance = deposits
+                .union(withdrawals)
+                .groupBy("account")
+                .agg(sum("amount").as("balance"))
+                .orderBy(desc("balance"));
+
+        accounts_Descending_Balance.show();
 
         spark.close();
 
